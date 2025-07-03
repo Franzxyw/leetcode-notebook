@@ -13,7 +13,7 @@ leetcode-notebook/
 ├── templates/             # Common reusable algorithm templates
 └── README.md
 
-🧩 Topics to Cover
+## 🧩 Topics to Cover
 Graph Traversal (BFS / DFS)
 
 Dynamic Programming
@@ -22,11 +22,11 @@ Backtracking & Recursion
 
 Greedy, Binary Search, Union-Find, etc.
 
-🚀 Goal
+## 🚀 Goal
 Build a sustainable, high-quality solution base covering the most insightful algorithmic problems.
 Each note focuses not only on code, but also on thinking, structure, and generalization.
 
-✅ Completed
+## ✅ Completed
 0126. Word Ladder II
 
 Maintained by Franzxyw. Powered by sweat and curiosity.
