@@ -12,6 +12,7 @@ leetcode-notebook/
 ├── tags/                  # (optional) Concept-based summaries (e.g., BFS.md)
 ├── templates/             # Common reusable algorithm templates
 └── README.md
+```
 
 ## 🧩 Topics to Cover
 Graph Traversal (BFS / DFS)
