@@ -13,6 +13,7 @@ leetcode-notebook/
 │   ├── 0126-Word-Ladder-II.md
 │   └── ...
 ├── tags/                  # (optional) Concept-based summaries (e.g., BFS.md)
+│   ├── grid.md
 ├── templates/             # Common reusable algorithm templates
 └── README.md
 ```
