@@ -26,7 +26,7 @@ This pattern appears in many classic grid-based problems such as:
 - **Restore after traversal**: (e.g., change `'#'` back to `'O'`)
 
 ### Code Template (DFS)
-Python 🐍
+**Python 🐍**
 ```python
 def dfs(r, c):
     if not (0 <= r < rows and 0 <= c < cols): return
@@ -35,7 +35,7 @@ def dfs(r, c):
     for dr, dc in directions:
         dfs(r + dr, c + dc)
 ```
-C++ 🐱‍👤
+**C++ 🐱‍👤**
 ```cpp
 void dfs(int r, int c, vector<vector<char>>& grid, vector<vector<bool>>& visited) {
     int rows = grid.size(), cols = grid[0].size();
