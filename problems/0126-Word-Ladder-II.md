@@ -26,8 +26,6 @@ Given two words, `beginWord` and `endWord`, and a dictionary `wordList`, return 
 - Initialize:
 
 ```python
-python
-复制编辑
 wordSet = set(wordList)
 if endWord not in wordSet:
     return []
