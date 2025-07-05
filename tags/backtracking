@@ -1,0 +1,85 @@
+# 🧠 Backtracking Pattern: Constructive Search
+
+Backtracking is a common technique for generating all feasible combinations, permutations, or partitions of elements under certain constraints.
+
+This note outlines the general structure of **"Try first, then check"** pattern, particularly useful in **constructive search problems**.
+
+---
+
+## 🔧 Core Template
+
+```python
+def backtrack(path, ...):
+    if is_valid_solution(path):
+        res.append(path[:])
+        return
+
+    for i in range(...):
+        if conflict(i):
+            continue
+        path.append(choice(i))
+        backtrack(path, ...)
+        path.pop()
+```
+
+---
+
+## 🔍 Key Characteristics
+
+| Aspect                                          | Description                                                           |
+| ----------------------------------------------- | --------------------------------------------------------------------- |
+| ✅ **Try first, then check**                     | Explore a path by choosing, and check validity in the next recursion. |
+| ✅ **Result is added after entering next level** | Terminal condition is checked inside recursion.                       |
+| ✅ **Decision Tree Traversal**                   | The algorithm explores every possible decision path.                  |
+| ✅ **Backtracking = DFS + pruning + undo**       | Go forward (choose), and undo when returning.                         |
+
+---
+
+## 🤔 Why "Try then Check" Works Well
+
+* It matches the natural structure of DFS on a tree.
+* It provides flexibility to apply pruning logic after a step is taken.
+* Helps avoid premature rejection.
+* Keeps the code modular and recursive structure clear.
+
+---
+
+## 📉 Classic Problems Using This Pattern
+
+| ID  | Title                   | Check Condition in Backtrack |
+| --- | ----------------------- | ---------------------------- |
+| 40  | Combination Sum II      | `if remaining == 0:`         |
+| 47  | Permutations II         | `if len(path) == len(nums):` |
+| 77  | Combinations            | `if len(path) == k:`         |
+| 39  | Combination Sum         | `if target == 0:`            |
+| 131 | Palindrome Partitioning | `if start == len(s):`        |
+
+---
+
+## 🎨 Visual Overview
+
+```text
+[ ] Start
+ |
+[Try element A]---[Try element B]---...
+   |                   |
+[Check goal]       [Check goal]
+   |                   |
+[Backtrack]        [Backtrack]
+```
+
+---
+
+## 🎓 Summary
+
+* Backtracking is not just recursion. It's structured trial + pruning + undo.
+* Try-then-check fits almost all constructive problems: permutations, combinations, partitions.
+* When stuck: try to reframe your problem as a path-building problem.
+
+> Mastering backtracking means mastering **recursion design** and **search space exploration**.
+
+---
+
+## 🔄 Related Tags
+
+`DFS` · `Backtracking` · `Combinatorics` · `Search` · `Pruning`
