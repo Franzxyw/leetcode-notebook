@@ -12,10 +12,11 @@ leetcode-notebook/
 ├── problems/              # Problem-wise detailed solutions
 │   ├── 0126-Word-Ladder-II.md
 │   ├── 0130-Surrounded_Regions.md
-|   └── 0047-Permutations-II.md
+|   ├── 0047-Permutations-II.md
 │   └── ...
 ├── tags/                  # (optional) Concept-based summaries (e.g., BFS.md)
 │   ├── grid.md
+│   ├── backtracking.md
 ├── templates/             # Common reusable algorithm templates
 └── README.md
 ```
